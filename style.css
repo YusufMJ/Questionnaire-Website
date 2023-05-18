@@ -7,10 +7,10 @@
     height: 100vh;
 }
 body{
-background-color: rgba(0, 0, 0, 0.579);
+background-color: var(--secondary-bg);
 font-family: 'Chakra Petch', sans-serif;
-min-height: 500vh;
-/*overflow: hidden;*/
+/*min-height: 500vh;
+overflow: hidden;*/
 }
 
 .primary{
@@ -29,7 +29,7 @@ min-height: 500vh;
 
 footer{
     min-height: 100px;
-    background-color: green;
+    background-color: var(--primary-bg);
 }
 
 .responsiveIMG{
