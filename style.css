@@ -9,7 +9,7 @@
 body{
 background-color: rgba(0, 0, 0, 0.579);
 font-family: 'Chakra Petch', sans-serif;
-height: 500vh;
+min-height: 500vh;
 /*overflow: hidden;*/
 }
 
@@ -25,4 +25,14 @@ height: 500vh;
     border: 2px solid var(--secondary-bg);
     border-radius: 40%;
     padding: 0 10px;
+}
+
+footer{
+    min-height: 100px;
+    background-color: green;
+}
+
+.responsiveIMG{
+    width: 100%;
+    height: auto;
 }
