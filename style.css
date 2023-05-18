@@ -1,0 +1,28 @@
+:root{
+    --primary-bg: red;
+    --secondary-bg: white;
+}
+
+.container{
+    height: 100vh;
+}
+body{
+background-color: rgba(0, 0, 0, 0.579);
+font-family: 'Chakra Petch', sans-serif;
+height: 500vh;
+/*overflow: hidden;*/
+}
+
+.primary{
+    background-color: var(--primary-bg);
+}
+.secondary{
+    background-color: var(--secondary-bg);
+}
+
+
+.round{
+    border: 2px solid var(--secondary-bg);
+    border-radius: 40%;
+    padding: 0 10px;
+}
