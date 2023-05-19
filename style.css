@@ -1,6 +1,7 @@
 :root{
-    --primary-bg: red;
-    --secondary-bg: white;
+    --primary-bg: #9b1f17;
+    --secondary-bg: rgb(240, 240, 240);
+    --text-color: rgb(0, 0, 0) ;
 }
 
 .container{
@@ -20,10 +21,13 @@ overflow: hidden;*/
     background-color: var(--secondary-bg);
 }
 
+.textColor{
+    color: var(--text-color);
+}
+
 
 .round{
     border: 2px solid var(--secondary-bg);
-    border-radius: 40%;
     padding: 0 10px;
 }
 
@@ -36,3 +40,24 @@ footer{
     width: 100%;
     height: auto;
 }
+
+.btn-outline-dark{
+    border-color: var(--primary-bg);
+}
+.btn-outline-dark:hover{
+    background-color: var(--primary-bg);
+}
+
+#qLparent .col {
+    flex-grow: 1;
+    transition: all 4s ease;
+  }
+  
+#qLparent .col-12 {
+    flex-shrink: 1;
+    transition: all 4s ease;
+  }
+
+  #qLparent .hidden{
+    display: none;
+  }

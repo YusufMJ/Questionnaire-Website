@@ -25,7 +25,7 @@
                <input type="checkbox" class="form-check-input" id="exampleCheck1">
                <label class="form-check-label" for="exampleCheck1">Check me out</label>
                </div> This could be used for something else keep for now -->
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-outline-dark">Sign in</button>
          </form>
       </div>
 
