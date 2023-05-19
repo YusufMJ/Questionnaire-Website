@@ -38,18 +38,35 @@
             <br>
             <div class="col">
                 <div class="row btn-group d-flex justify-content-center">
+                    
+                <div class="col-2 d-flex text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill">Likert</button>
+                    </div>
+                    <div class="col-12 d-flex d-sm-none text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill hidden"></button>
+                    </div>
+
                     <div class="col-2 d-flex text-center">
                        <button class="btn btn-outline-light btn-lg flex-fill">T/F</button>
                     </div>
+                    <div class="col-12 d-flex d-md-none text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill hidden"></button>
+                    </div>
+
+
                     <div class="col-2 d-flex text-center">
                        <button class="btn btn-outline-light btn-lg flex-fill">MCQ</button>
                     </div>
-                    <div class="col-2 d-flex text-center">
-                       <button class="btn btn-outline-light text-nowrap btn-lg flex-fill">Short Answer</button>
+                  
+                    <div class="col-12 d-flex d-sm-none text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill hidden"></button>
                     </div>
                     <div class="col-2 d-flex text-center">
-                       <button class="btn btn-outline-light btn-lg flex-fill">Likert</button>
+                       <button class="btn btn-outline-light text-nowrap btn-lg flex-fill">Short</button>
                     </div>
+                
+
+                   
                 
                  </div>
 
