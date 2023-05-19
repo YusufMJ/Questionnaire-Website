@@ -18,9 +18,7 @@ overflow: hidden;*/
 .primary{
     background-color: var(--primary-bg);
 }
-.primary:hover{
-    background-color: var(--primary-bg--dark);
-}
+
 .secondary{
     background-color: var(--secondary-bg);
 }
@@ -49,7 +47,7 @@ footer{
     border-color: var(--primary-bg);
 }
 .btn-outline-dark:hover{
-    background-color: var(--primary-bg);
+    background-color: var(--primary-bg--dark);
 }
 
 #qLparent .col-12 {
