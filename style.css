@@ -1,5 +1,6 @@
 :root{
     --primary-bg: #9b1f17;
+    --primary-bg--dark: #660c05;
     --secondary-bg: rgb(240, 240, 240);
     --text-color: rgb(0, 0, 0) ;
 }
@@ -16,6 +17,9 @@ overflow: hidden;*/
 
 .primary{
     background-color: var(--primary-bg);
+}
+.primary:hover{
+    background-color: var(--primary-bg--dark);
 }
 .secondary{
     background-color: var(--secondary-bg);
@@ -48,16 +52,12 @@ footer{
     background-color: var(--primary-bg);
 }
 
-#qLparent .col {
-    flex-grow: 1;
-    transition: all 4s ease;
-  }
-  
 #qLparent .col-12 {
     flex-shrink: 1;
     transition: all 4s ease;
   }
-
-  #qLparent .hidden{
-    display: none;
+  
+#qLparent .col {
+    flex-grow: 1;
+    transition: all 4s ease;
   }

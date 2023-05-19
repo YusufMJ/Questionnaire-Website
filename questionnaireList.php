@@ -3,14 +3,32 @@
 <p class="text-center mt-5">Feel free to answer our Questionnaires :]</p> 
 
 <div class="container">
-    <div class="row text-center" id="qLparent">
-        <div class="col border border-dark btn qL"id="qL1">hi
-        <div class="hidden qLLc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum repellat voluptates dolores illum hic aliquid optio explicabo nostrum ullam accusantium quae amet ea, voluptatibus aperiam, ratione, cupiditate cum cumque consequatur?</div>
+  <div class="row" id="qLparent">
+    <div class="col-12 col-md-6 d-flex" id="qL1">
+      <button class="btn btn-primary primary flex-fill" type="button" data-bs-toggle="collapse"
+      data-bs-target="#Zelda" aria-expanded="false" aria-controls="Zelda">
+        Zelda
+        <div class="collapse" id="Zelda">
+          <div class="">
+            text number 1
+          </div>
         </div>
-        <div class="col border border-dark btn qL"id="qL2">hi</div>
+      </button>
     </div>
+    <div class="col-12 col-md-6 d-flex">
+      <button class="btn btn-primary primary flex-fill" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mario" aria-expanded="false" aria-controls="mario">
+        Mario
+        <div class="collapse" id="mario">
+          <div class="card">
+            text number 2
+          </div>
+        </div>
+      </button>
+    </div>
+  </div>
+  
 </div>
-
 
 <script src="index.js"></script>
 <?php require("reuse/end.html");?>
