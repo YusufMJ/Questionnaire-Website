@@ -1,4 +1,6 @@
 <?php require("reuse/nav.html");?>
+
+
 <div class="container">
         <main class="formB">
             <form action="">
@@ -32,34 +34,35 @@
             </form>
 
         </main>
-        <footer class="formBtn d-flex justify-content-around align-items-center flex-column  sticky-bottom">
-            <div class="abc d-flex align-items-center ">
-                <div class="row">
-                    <div class="col-3">
-                       <button class="btn btn-primary flex-fill">T/F</button>
+        <footer class="formBtn sticky-bottom">
+            <br>
+            <div class="col">
+                <div class="row btn-group d-flex justify-content-center">
+                    <div class="col-2 d-flex text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill">T/F</button>
                     </div>
-                    <div class="col-3">
-                       <button class="btn btn-primary flex-fill">MCQ</button>
+                    <div class="col-2 d-flex text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill">MCQ</button>
                     </div>
-                    <div class="col-3">
-                       <button class="btn btn-primary flex-fill">Short</button>
+                    <div class="col-2 d-flex text-center">
+                       <button class="btn btn-outline-light text-nowrap btn-lg flex-fill">Short Answer</button>
                     </div>
-                    <div class="col-3">
-                       <button class="btn btn-primary flex-fill">Likert</button>
+                    <div class="col-2 d-flex text-center">
+                       <button class="btn btn-outline-light btn-lg flex-fill">Likert</button>
                     </div>
                 
                  </div>
 
             </div>
-            <div class="">
-                <div class="row">
+            <div class="col">
+                <div class="row d-flex justify-content-between mt-4">
                    
-                    <div class="col-3 ms-5">
-                       <button class="btn btn-primary">Clear</button>
+                    <div class="col-2 d-flex ms-3">
+                       <button class="btn btn-outline-light flex-fill">Clear</button>
                     </div>
                     
-                    <div class="col-3 me-5">
-                       <button class="btn btn-primary">Save</button>
+                    <div class="col-2 d-flex text-end me-3">
+                       <button class="btn btn-outline-light flex-fill">Save</button>
                     </div>
                  </div>
 
@@ -68,10 +71,6 @@
             
          </footer>
     </div>
-
-
-
-
 
 
 
