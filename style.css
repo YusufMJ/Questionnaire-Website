@@ -59,3 +59,19 @@ footer{
     flex-grow: 1;
     transition: all 4s ease;
   }
+
+
+  .formB{
+    min-height: 90%;
+  }
+
+  .formBtn{
+    min-height: 20%;
+}
+
+textarea{
+    resize: none;
+}
+.hidden{
+    visibility: hidden;
+}

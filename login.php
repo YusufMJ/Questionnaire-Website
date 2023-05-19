@@ -4,12 +4,12 @@
 
    <div class="row primary p-1">
 
-      <div class="col-6">
+      <div class="col-6 d-none d-md-block">
          <img class="responsiveIMG primary" src="marioPeek.webp" alt="marioPeek">
       </div>
 
 
-      <div class="col secondary d-flex align-items-center justify-content-center">
+      <div class="col secondary d-flex align-items-center justify-content-center  p-5 p-md-0">
          <form>
             <h1 class="text-center">LOGIN</h1>
             <div class="form-group">
