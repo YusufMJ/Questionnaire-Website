@@ -37,7 +37,7 @@ function addLikert() {
     likertQ = `<div class="row my-5 text-center">
     <div class="col">
        <label for="q${questionCount}">Question #${questionCount}  </label>
-       <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}">
+       <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}" value="q${questionCount}">
        <input type="range" id="temp" name="temp" list="markers" />
        <datalist id="markers">
           <option value="0">1</option>
@@ -57,7 +57,7 @@ function addYesNo() {
     booleanQ = ` <div class="row my-5 text-center">
     <div class="col">
        <label for="q${questionCount}">Question #${questionCount}  </label>
-       <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}">
+       <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}" value="q${questionCount}">
        <label for="true">True</label>
        <input class="me-2" type="radio" name="TF" id="true">
        <label class="ms-2" for="false">False</label>
@@ -73,12 +73,12 @@ function addMCQ() {
     mcQ = `<div class="row my-5 text-center">
     <div class="col">
        <label for="q${questionCount}">Question #${questionCount} </label>
-       <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}">
+       <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}" value="q${questionCount}">
        <div>
-          <input type="text" name="OP1-${questionCount}" id="OP1-${questionCount}" placeholder="option 1">
-          <input type="text" name="OP2-${questionCount}" id="OP2-${questionCount}"  placeholder="option 2">
-          <input type="text" name="OP3-${questionCount}" id="OP3-${questionCount}" placeholder="option 3">
-          <input type="text" name="OP4-${questionCount}" id="OP4-${questionCount}" placeholder="option 4">
+          <input type="text" name="OP1-${questionCount}" id="OP1-${questionCount}" placeholder="option 1" value="OP1-${questionCount}">
+          <input type="text" name="OP2-${questionCount}" id="OP2-${questionCount}"  placeholder="option 2" value="OP2-${questionCount}">
+          <input type="text" name="OP3-${questionCount}" id="OP3-${questionCount}" placeholder="option 3" value="OP3-${questionCount}">
+          <input type="text" name="OP4-${questionCount}" id="OP4-${questionCount}" placeholder="option 4" value="OP4-${questionCount}">
           <input type="hidden" name="type-${questionCount}" value="mcq"> 
        </div>
     </div>
@@ -91,9 +91,9 @@ questionCount++;
   shortAnswer = `<div class="row my-5 text-center">
   <div class="col">
      <label for="q${questionCount}">Question #${questionCount}  </label>
-     <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}">
+     <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}" value="q${questionCount}">
      <label for="shortA">Short answer: </label>
-     <input type="text" name="ShortA" id="ShortA">
+     <input type="text" name="ShortA" id="ShortA" value="shorttt">
      <input type="hidden" name="type-${questionCount}" value="short"> 
   </div>
 </div>`;

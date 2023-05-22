@@ -12,7 +12,7 @@
       <div class="row my-5 text-center">
         <div class="col">
           <label for="title">Title: </label>
-          <input type="text" placeholder="Enter a title here" id="title" name="title">
+          <input type="text" placeholder="Enter a title here" id="title" name="title" value="tempTitle">
         </div>
       </div>
       <div class="row">
@@ -22,18 +22,18 @@
         <div class="col d-flex justify-content-center">
           <div class="col-10 col-md-8 d-flex justify-content-center">
             <label class="me-1 d-none d-md-block" for="description">Description: </label>
-            <textarea class="flex-fill ms-auto me-auto" name="description" id="description" cols="50" rows="6" placeholder="Enter description here"></textarea>
+            <textarea class="flex-fill ms-auto me-auto" name="description" id="description" cols="50" rows="6" placeholder="Enter description here">descriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescriptiondescription</textarea>
           </div>
         </div>
       </div>
-      <!-- Questions will be added dynamically by JavaScript -->
+    
       <div id="questions"></div>
       
     </form>
   </main>
   <footer class="formBtn sticky-bottom">
     <br>
-    <!-- Add buttons to add questions for different question types -->
+ 
     <div class="row btn-group d-none d-md-flex justify-content-center px-5 p-md-0">
       <div class="col-12 col-sm-6 col-md-2">
         <button class="btn btn-outline-light btn-lg btn-size" id="addLikert">Likert</button>
