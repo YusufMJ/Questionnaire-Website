@@ -41,10 +41,10 @@
                   <label for="title">Question: </label>
                   <input class="btn-size" type="text" placeholder="abc?" id="q2">
                   <div>
-                     <input type="checkbox" name="MCQ" ><input type="text" name="OP1" id="OP1" placeholder="option 1">
-                     <input type="checkbox" name="MCQ" ><input type="text" name="OP2" id="OP2"  placeholder="option 2">
-                     <input type="checkbox" name="MCQ" ><input type="text" name="OP3" id="OP3" placeholder="option 3">
-                     <input type="checkbox" name="MCQ" ><input type="text" name="OP4" id="OP4" placeholder="option 4">
+                     <input type="text" name="OP1" id="OP1" placeholder="option 1">
+                     <input type="text" name="OP2" id="OP2"  placeholder="option 2">
+                     <input type="text" name="OP3" id="OP3" placeholder="option 3">
+                     <input type="text" name="OP4" id="OP4" placeholder="option 4">
                   </div>
                </div>
             </div>
