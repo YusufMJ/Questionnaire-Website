@@ -10,16 +10,16 @@
 
 
       <div class="col secondary d-flex align-items-center justify-content-center  p-5 p-md-0">
-         <form>
+         <form method="post" action="verify.php">
             <h1 class="text-center">LOGIN</h1>
             <div class="form-group">
                <label for="username">Username</label>
-               <input type="text" class="form-control" id="username">
+               <input type="text" class="form-control" id="user" name="user">
                <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> This could be used for verification error message hmm-->
             </div>
             <div class="form-group">
                <label for="password">Password</label>
-               <input type="password" class="form-control" id="password">
+               <input type="password" class="form-control" id="pass" name="pass">
             </div>
             <!--<div class="form-group form-check">
                <input type="checkbox" class="form-check-input" id="exampleCheck1">

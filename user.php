@@ -1,3 +1,4 @@
+<?php require('reuse/enforce.php');?>
 <?php require("reuse/nav.html");?>
 
 <div class="container text-center d-flex align-items-center justify-content-center">

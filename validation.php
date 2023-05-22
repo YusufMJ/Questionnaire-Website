@@ -6,7 +6,7 @@ $username = $_GET['user'];
 $unPattern = '/^[A-Za-z0-9]{3,15}$/';
 $unErrorMsg = "";
 if (preg_match($unPattern, $username)) {
-    echo "Valid username";
+    echo ""; //Valid username
 } else {
     $minPattern = '/^[A-Za-z0-9]{0,2}$/';
     $maxPattern = '/^[A-Za-z0-9]{16,}$/';
@@ -77,7 +77,7 @@ if (isset($_GET['email'])) {
     }
 
     if ($emErrorMsg == "") {
-        echo "Valid email";
+        echo ""; //Valid email
     } else {
         echo $emErrorMsg;
     }
@@ -113,7 +113,7 @@ if (isset($_GET['password']) && $_GET['password'] != "") {
     }
 
     if ($pwdErrorMsg == "") {
-        echo "Valid password";
+        echo ""; //Valid password
     } else {
         echo $pwdErrorMsg;
     }
@@ -125,7 +125,7 @@ if (isset($_GET['oPassword']) && isset($_GET['cPassword'])) {
     $confirmPassword = $_GET['cPassword'];
 
     if ($oPassword === $confirmPassword) {
-        echo "Matching password";
+        echo ""; //Matching password
     } else {
         echo "Passwords are not matching";
     }

@@ -10,7 +10,7 @@
 
 
       <div class="col secondary d-flex align-items-center justify-content-center  p-5 p-md-0">
-         <form>
+         <form class="registerForm">
             <h1 class="text-center">REGISTER</h1>
             <div class="form-group">
                <label for="username">Username</label>
@@ -36,7 +36,7 @@
                <input type="checkbox" class="form-check-input" id="exampleCheck1">
                <label class="form-check-label" for="exampleCheck1">Check me out</label>
                </div> This could be used for something else keep for now -->
-            <button type="submit" class="btn btn-outline-dark">Sign up</button>
+            <button type="submit" class="btn btn-outline-dark" id="submitButton" disabled>Sign up</button>
          </form>
       </div>
 

@@ -1,4 +1,14 @@
-<?php require("reuse/nav.html"); ?>
+
+<?php
+
+require('reuse/enforce.php');
+
+if($_SESSION['activeUser']!='admin'){
+
+    die("NOT AUTHORIZED ACCESS TO THIS PAGE!");
+}
+
+require("reuse/nav.html"); ?>
 
 <div class="container">
   <main class="formB">

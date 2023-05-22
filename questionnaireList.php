@@ -1,3 +1,4 @@
+<?php require('reuse/enforce.php');?>
 <?php require("reuse/nav.html");?>
 <h1 class="text-center mt-5">Questionnaire Lists!</h1>
 <p class="text-center mt-5">Welcome {username}! Feel free to answer our Questionnaires :]</p> 
