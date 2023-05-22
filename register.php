@@ -14,20 +14,23 @@
             <h1 class="text-center">REGISTER</h1>
             <div class="form-group">
                <label for="username">Username</label>
-               <input type="text" class="form-control" id="username">
-               <small id="unError" class="form-text text-muted">error message.</small>
+               <input type="text" class="form-control" id="username" onkeyup="usernameCheck(this.value);">
+               <small id="unError" class="form-text errorMessage"></small>
             </div>
             <div class="form-group">
                <label for="email">Email</label>
-               <input type="text" class="form-control" id="email">
+               <input type="text" class="form-control" id="email" onkeyup="emailCheck(this.value);">
+               <small id="emError" class="form-text errorMessage"></small>
             </div>
             <div class="form-group">
                <label for="password">Password</label>
-               <input type="password" class="form-control" id="password">
+               <input type="password" class="form-control" id="password" onkeyup="passwordCheck(this.value);">
+               <small id="pError" class="form-text errorMessage"></small>
             </div>
             <div class="form-group">
                <label for="cPassword">Confirm Password</label>
-               <input type="password" class="form-control" id="cPassword">
+               <input type="password" class="form-control" id="cPassword" onkeyup="confirmPasswordCheck(document.getElementById('password').value, this.value);">
+               <small id="cPError" class="form-text errorMessage"></small>
             </div>
             <!--<div class="form-group form-check">
                <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -40,4 +43,5 @@
 
    </div>
 </div>
+<script src="register.js"></script>
 <?php require("reuse/end.html");?>

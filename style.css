@@ -81,3 +81,7 @@ textarea{
   .main-content {
     padding-bottom: 100px;
   }
+ 
+  .form-group .errorMessage {
+    color: red;
+}
