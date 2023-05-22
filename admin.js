@@ -5,6 +5,13 @@ document.getElementById("addShort").addEventListener("click", addShort);
 let questionCount = 0;
 
 document.getElementById("save").addEventListener("click", saveForm);
+document.getElementById("clear").addEventListener("click", deleteFormQs);
+
+function deleteFormQs(){
+   questionCount=0;
+   questions.innerHTML="";
+
+}
 
 function saveForm() {
 questions.insertAdjacentHTML("beforeend", `<input type="hidden" name="questionCount" value="${questionCount}">`)
