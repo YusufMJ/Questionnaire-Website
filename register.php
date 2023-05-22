@@ -15,7 +15,7 @@
             <div class="form-group">
                <label for="username">Username</label>
                <input type="text" class="form-control" id="username">
-               <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> This could be used for verification error message hmm-->
+               <small id="unError" class="form-text text-muted">error message.</small>
             </div>
             <div class="form-group">
                <label for="email">Email</label>
