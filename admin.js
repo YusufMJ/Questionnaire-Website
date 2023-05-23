@@ -2,10 +2,16 @@ document.getElementById("addLikert").addEventListener("click", addLikert);
 document.getElementById("addYesNo").addEventListener("click", addYesNo);
 document.getElementById("addMCQ").addEventListener("click", addMCQ);
 document.getElementById("addShort").addEventListener("click", addShort);
+document.getElementById("addLikert2").addEventListener("click", addLikert);
+document.getElementById("addYesNo2").addEventListener("click", addYesNo);
+document.getElementById("addMCQ2").addEventListener("click", addMCQ);
+document.getElementById("addShort2").addEventListener("click", addShort);
 let questionCount = 0;
 
 document.getElementById("save").addEventListener("click", saveForm);
 document.getElementById("clear").addEventListener("click", deleteFormQs);
+document.getElementById("save2").addEventListener("click", saveForm);
+document.getElementById("clear2").addEventListener("click", deleteFormQs);
 
 function deleteFormQs(){
    questionCount=0;

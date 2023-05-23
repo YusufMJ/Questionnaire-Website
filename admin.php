@@ -64,24 +64,24 @@
         </div>
         <div class="row btn-group d-flex d-md-none justify-content-center px-5 p-md-0">
             <div class="col-12 col-sm-6 col-md-2">
-                <button class="btn btn-outline-light btn-size">Likert</button>
+                <button class="btn btn-outline-light btn-size" id="addLikert2">Likert</button>
             </div>
             <div class="col-12 col-sm-6 col-md-2">
-                <button class="btn btn-outline-light btn-size">T/F</button>
+                <button class="btn btn-outline-light btn-size" id="addYesNo2">T/F</button>
             </div>
             <div class="col-12 col-sm-6 col-md-2">
-                <button class="btn btn-outline-light btn-size">MCQ</button>
+                <button class="btn btn-outline-light btn-size" id="addMCQ2">MCQ</button>
             </div>
             <div class="col-12 col-sm-6 col-md-2">
-                <button class="btn btn-outline-light text-nowrap btn-size">Short</button>
+                <button class="btn btn-outline-light text-nowrap btn-size " id="addShort2">Short</button>
             </div>
         </div>
         <div class="row d-flex d-md-none justify-content-center  justify-content-md-between mt-4">
             <div class="col-6 col-sm-5 col-md-2">
-                <button class="btn btn-outline-light btn-size">Clear</button>
+                <button class="btn btn-outline-light btn-size" id="clear2">Clear</button>
             </div>
             <div class="col-6 col-sm-5 col-md-2">
-                <button class="btn btn-outline-light btn-size">Save</button>
+                <button class="btn btn-outline-light btn-size" id="save2">Save</button>
             </div> 
         </div>
 </footer>
