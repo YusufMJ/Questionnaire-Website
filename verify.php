@@ -23,14 +23,14 @@ if(isset($_POST['user'])){
         $userTable->execute();
     
         if($userData = $userTable->fetch(PDO::FETCH_ASSOC)){
-            if ($userData['password']==$Spass) {
+            if (password_verify($Spass,$userData['password'])) {
             $_SESSION['activeUser']= $userData['userType'];
            // echo "valid username and password combination";  
             header('location:index.php');
         }else echo "Invalid username and password combination";
         }else die("this username is not stored in the database");
     
-    
+        
         $db=null;
     
     }catch(PDOException $e){
