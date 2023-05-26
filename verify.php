@@ -24,7 +24,7 @@ if(isset($_POST['user'])){
     
         if($userData = $userTable->fetch(PDO::FETCH_ASSOC)){
             if (password_verify($Spass,$userData['password'])) {
-            $_SESSION['activeUser']= $userData['userType'];
+                $_SESSION['activeUser']= array($userData['userType'],$userData['UID']);
            // echo "valid username and password combination";  
             header('location:index.php');
         }else echo "Invalid username and password combination";
