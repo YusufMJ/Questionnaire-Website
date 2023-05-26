@@ -41,7 +41,7 @@ questions.insertAdjacentHTML("beforeend", `<input type="hidden" name="questionCo
 function addLikert() {
     questionCount++;  
     likertQ = `<div class="row my-5 text-center">
-    <div class="col">
+    <div class="col ">
        <label for="q${questionCount}">Question #${questionCount}  </label>
        <input class="btn-size" type="text" placeholder="abc?" id="q${questionCount}" name="q${questionCount}" value="q${questionCount}">
        <input type="range" id="temp" name="temp" list="markers" />
