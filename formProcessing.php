@@ -21,7 +21,7 @@ if (isset($_POST['title'])) {
         $qsStatement->bindParam(':question', $question);
         $qsStatement->bindParam(':type', $type);
 
-        $mcqquery = "INSERT INTO mcq_options VALUES (null, :question_id, :option)";
+        $mcqquery = "INSERT INTO mcqoptions VALUES (null, :question_id, :option)";
         $mcqStatement = $db->prepare($mcqquery);
 
         $questionCount = $_POST['questionCount'];

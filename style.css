@@ -85,3 +85,20 @@ textarea{
   .form-group .errorMessage {
     color: red;
 }
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 1px solid #212529;
+    border-radius: .25rem;
+  }
+  
+  .btn {
+    width: 100%;
+  }
+  
+  .btn-start {
+    align-self: flex-end;
+    margin: 8px;
+  }

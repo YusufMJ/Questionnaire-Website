@@ -27,17 +27,19 @@ $counter=1;
 foreach($qtable as $qdata){
 ?>
 <div class="col-12 col-md-6 d-flex mb-5" id="qL<?php $counter+=1; echo $counter;?>">
-      <button class="btn btn-outline-dark textColor flex-fill" type="button" data-bs-toggle="collapse"
-      data-bs-target="#<?php echo $qdata[1];?>Zelda1" aria-expanded="false" aria-controls="<?php echo $qdata[1];?>Zelda1">
-      <?php echo $qdata[1];?>Zelda
-        <div class="collapse" id="<?php echo $qdata[1];?>Zelda1">
-          <div class="">
+<div class="btn-container flex-fill">
+      <button class="btn btn-outline-dark textColor" type="button" data-bs-toggle="collapse"
+      data-bs-target="#<?php echo $qdata[1].$qdata[0];?>" aria-expanded="false" aria-controls="<?php echo $qdata[1].$qdata[0];?>">
+      <?php echo $qdata[1];?></button>
+        <div class="collapse" id="<?php echo $qdata[1].$qdata[0];?>">
+          <div class="text-center">
           <?php echo $qdata[2];?>text number 1
+          <a href="displayQuestionnaire.php?QID=<?php echo $qdata[0];?>" class="btn btn-outline-dark btn-start">Start</a>
           </div>
         </div>
-      </button>
+      
 </div>
-
+</div>
 
 <?php
 
