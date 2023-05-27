@@ -31,9 +31,6 @@
             </div>
 </div>
             
-              <footer class="textColor">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores vero facere odio provident error. Laborum id,
-                ratione sint excepturi reprehenderit sed culpa iste, expedita quae soluta voluptatem at, totam accusamus!
-              </footer>
+             
 
 <?php require("reuse/end.html");?>
