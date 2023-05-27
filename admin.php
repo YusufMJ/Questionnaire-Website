@@ -1,7 +1,17 @@
+<?php require('reuse/enforce.php');
+?>
+<?php
+$ut=$_SESSION['activeUser'][0];
+if($ut!='admin'){
 
+    die("NOT AUTHORIZED ACCESS TO THIS PAGE!");
+}
+?>
 
 <?php require("reuse/nav.html"); ?>
-<?php require('reuse/enforce.php'); ?>
+
+
+
 
 <div class="container">
     <main class="formB">

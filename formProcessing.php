@@ -6,6 +6,15 @@ if (isset($_POST['title'])) {
     try {
         $title = $_POST['title'];
         $description = $_POST['description'];
+        $titlePTRN = '^[a-zA-Z0-9]{3,20}$';
+        if(!preg_match($titlePTRN,$title)){
+             die("Invalid title please enter between 3 and 20 characters");
+        }
+        $description = $_POST['description'];
+        $descriptionPTRN = '^[a-zA-Z0-9]{6,50}$';
+        if(!preg_match($descriptionPTRN,$description)){
+            die("Invalid description");
+       }
 
         $qLquery = "INSERT INTO questionnaires VALUES (null, :title, :description)";
         $qlStatement = $db->prepare($qLquery);
