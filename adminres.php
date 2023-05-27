@@ -1,4 +1,5 @@
-
+<?php require('reuse/enforce.php');
+?>
 <?php
 $ut=$_SESSION['activeUser'][0];
 $un=$_SESSION['activeUser'][2];
