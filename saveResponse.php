@@ -28,6 +28,7 @@ if(isset($_GET['submit'])){
         //echo $questionID." ";
         //echo $value." "; 
         $resquery = "INSERT INTO responses VALUES (null,:userID , :questionID, :answer)";
+        
         $resQ = $db->prepare($resquery);
         $resQ->bindParam(':userID', $UID);
         $resQ->bindParam(':questionID', $questionID);
@@ -35,6 +36,7 @@ if(isset($_GET['submit'])){
         $resQ->execute();
     }
     echo "Successfully added response :) thank you";
+   
 }
  ?>
 

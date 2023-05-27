@@ -35,7 +35,7 @@
                         <h4 class='mt-2'> {$question['question_text']}</h4> <br>";
                 foreach ($options as $opt) {
 
-                    echo "<input class='ms-5 form-check-input questionBorder mb-2' type='radio' name='mcq-{$question['id']}' required>
+                    echo "<input class='ms-5 form-check-input questionBorder mb-2' type='radio' name='mcq-{$question['id']}' value={$opt['optionText']} required>
                           {$opt['optionText']}";
                 }
                 echo " </div>
