@@ -16,7 +16,7 @@
         echo "<br>";
 
         echo "<div class='container'>
-                  <form action='saveResponse.php' method='get' class='display p-5'>";
+                  <form action='editResponse.php' method='get' class='display p-5'>";
         $title = str_replace('_', ' ', $t);
         echo "<h1 class='text-center'>".$title."</h1>";
         foreach ($data as $question) {
@@ -75,7 +75,7 @@
             }
         }
         //echo '<input type="hidden" name="qid" value='.$QID.'>';
-        echo '<button type="submit" name="submit" class="btn btn-outline-dark mt-5 questionBorder">Submit</button>';
+        echo '<button type="submit" name="submit" class="btn btn-outline-dark mt-5 questionBorder">Update</button>';
         echo "</form>";
         echo "</div>";
 
