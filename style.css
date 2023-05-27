@@ -102,3 +102,7 @@ textarea{
     align-self: flex-end;
     margin: 8px;
   }
+  form.display{
+    background-color: rgb(255, 255, 255);
+    border: 2px solid var(--primary-bg);
+  }
