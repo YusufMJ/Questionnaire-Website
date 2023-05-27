@@ -92,10 +92,10 @@ if (isset($_GET['QID'])) {
                     The MCQ options percentage:
                     <ul>
                     <?php
-                    // Calculate the total count
+                    
                     $total_count = array_sum($option);
         
-                    // Display percentage for each option
+                    
                     $i = 1;
                     foreach ($choices as $choice) {
                         $percentage = ($option[$i] / $total_count) * 100;
