@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2023 at 06:36 PM
+-- Generation Time: May 27, 2023 at 05:21 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -45,15 +45,6 @@ CREATE TABLE `questionnaires` (
   `description` text DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `questionnaires`
---
-
-INSERT INTO `questionnaires` (`id`, `title`, `description`) VALUES
-(31, 'as', 'lol[p]'),
-(32, 'as', 'lol[p]'),
-(33, 'as', 'lol[p]');
-
 -- --------------------------------------------------------
 
 --
@@ -67,20 +58,18 @@ CREATE TABLE `questions` (
   `question_type` enum('likert','yesno','mcq','short') DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- --------------------------------------------------------
+
 --
--- Dumping data for table `questions`
+-- Table structure for table `responses`
 --
 
-INSERT INTO `questions` (`id`, `questionnaire_id`, `question_text`, `question_type`) VALUES
-(173, 31, 'q1', 'likert'),
-(174, 31, 'q2', 'yesno'),
-(175, 31, 'q3', 'mcq'),
-(176, 32, 'q1', 'likert'),
-(177, 32, 'q2', 'yesno'),
-(178, 32, 'q3', 'mcq'),
-(179, 33, 'q1', 'likert'),
-(180, 33, 'q2', 'yesno'),
-(181, 33, 'q3', 'mcq');
+CREATE TABLE `responses` (
+  `responseID` int(11) NOT NULL,
+  `UID` int(11) NOT NULL,
+  `questionID` int(11) NOT NULL,
+  `response` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -101,10 +90,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`UID`, `username`, `email`, `password`, `userType`) VALUES
-(7, 'admin', 'admin@gmail.com', '$2y$10$sy9qDv.rQCGOU4Md7/mlSOlWGejGkCbjCqLqWN4dnKjZw8fvY3DUu', 'admin'),
-(8, 'user', 'user@a.com', '$2y$10$tJYGbrQ3ar0CMUvLN3WK5.m3MfPM/sJFu8Spk/mqnqPoq1xY/wsQW', 'user'),
-(9, 'aaaaaa', 'a@a.com', '$2y$10$JsFQYtVadcyfvjYA4C38rOdESNTnzDkoG9E1Dygboon.GrfyUzSpe', 'user'),
-(10, 'Yoriwewe', 'qwwe@gmail.com', '$2y$10$qNDn4ApwEPxy5FHL/D/oD.QHeLZVSGOw1pwnn79IOBof13cYOibwS', 'user');
+(12, 'admin', 'admin@gmail.com', '$2y$10$IZ65wyEdTfQlt1tdXnD2R.E8x9TzDabqAJIer4.y4abwf43Orc7um', 'user');
 
 --
 -- Indexes for dumped tables
@@ -131,6 +117,14 @@ ALTER TABLE `questions`
   ADD KEY `QLtoQsFK` (`questionnaire_id`);
 
 --
+-- Indexes for table `responses`
+--
+ALTER TABLE `responses`
+  ADD PRIMARY KEY (`responseID`),
+  ADD KEY `userFK` (`UID`),
+  ADD KEY `QUESTFK` (`questionID`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -146,25 +140,31 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `mcqoptions`
 --
 ALTER TABLE `mcqoptions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=145;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=233;
 
 --
 -- AUTO_INCREMENT for table `questionnaires`
 --
 ALTER TABLE `questionnaires`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `questions`
 --
 ALTER TABLE `questions`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=182;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=280;
+
+--
+-- AUTO_INCREMENT for table `responses`
+--
+ALTER TABLE `responses`
+  MODIFY `responseID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=101;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `UID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `UID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables
@@ -181,6 +181,13 @@ ALTER TABLE `mcqoptions`
 --
 ALTER TABLE `questions`
   ADD CONSTRAINT `QLtoQsFK` FOREIGN KEY (`questionnaire_id`) REFERENCES `questionnaires` (`id`);
+
+--
+-- Constraints for table `responses`
+--
+ALTER TABLE `responses`
+  ADD CONSTRAINT `QUESTFK` FOREIGN KEY (`questionID`) REFERENCES `questions` (`id`),
+  ADD CONSTRAINT `userFK` FOREIGN KEY (`UID`) REFERENCES `users` (`UID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
